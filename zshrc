@@ -4,17 +4,18 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="gianu"
-
+DEFAULT_USER="apollo"
+ZSH_THEME="agnoster"
 COMPLETION_WAITING_DOTS="true"
-
 HIST_STAMPS="dd/mm/yyyy"
 
 fpath=(/usr/local/share/zsh-completions $fpath)
-
 plugins=(git rails z)
 
 source $ZSH/oh-my-zsh.sh
+
+export PATH="$PATH:$HOME/.rbenv/bin"
+eval "$(rbenv init -)"
 
 # User configuration
 
