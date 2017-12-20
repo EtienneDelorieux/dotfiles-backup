@@ -14,7 +14,7 @@ plugins=(git rails z)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="$PATH:$HOME/.rbenv/bin"
+export PATH="$PATH:$HOME/.rbenv/bin:$HOME/.rbenv/shims"
 eval "$(rbenv init -)"
 
 # User configuration
